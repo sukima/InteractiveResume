@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cp InteractiveResume.inform/Settings.plist.default InteractiveResume.inform/Settings.plist
+
+echo "Project ready for use."
+echo
+echo "If you are not using the Mac OS X version of Inform 7 you may need to"
+echo "open the project edit the settings and save before the project is"
+echo "converted to your operating systems format."
