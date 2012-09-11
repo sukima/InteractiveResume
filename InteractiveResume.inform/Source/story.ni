@@ -72,7 +72,7 @@ It is in the mezzanine and behind the staircase.
 Understand "Japanese" or "garden" as the glass wall.
 
 A thing called the staircase is a backdrop. "A wide marble staircase with glass railings leads up to the second floor mezzanine.[if the location is behind the staircase] It creates an alcove behind it that covers [a trapdoor].[end if]".
-It is in the main lobby and behind the staircase.
+It is in the main lobby, the mezzanine and behind the staircase.
 Understand "stairs" or "alcove" as the staircase.
 Instead of entering the staircase:
 	if the location is:
