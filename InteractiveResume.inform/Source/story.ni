@@ -9,6 +9,7 @@ The story creation year is 2012.
 The story description is "This is an interactive resume. Well -- it is my unique and quirky way to show the world who I am. It is a text adventure like the old mainframe kind (but newer). You may go directly to the information with the links provided or play the game for a more fun and -- interactive way to find out why in the world I would make such a thing.".
 
 Release along with cover art, the introductory booklet, the source text, a website and an interpreter.
+release along with a file of "Static Resume" called "DevinWeaver_Resume.pdf".
 
 [Index map with EPS file.]
 
@@ -82,9 +83,44 @@ Instead of entering the staircase:
 
 Chapter 2 - Offices (past jobs)
 
-The offices are west of the main lobby. "There two lines of cubicles running down the length of this room with a pathway down the center. Each cubical has a chair, computer terminal and a plaque that tells you the name of a past employee sorted by year (descending). The exit to [the main lobby] is to the east."
+The offices are west of the main lobby. "There are two lines of cubicles running down the length of this room with a pathway down the center. Each cubical has a chair, computer terminal (on which looks like a display of each past employer) and a plaque that tells you the name of a past employer sorted by year (descending). The exit to [the main lobby] is to the east."
 
-A cubical is a kind of thing. It is an open container and enterable.
+Section 1 - Cubicles
+
+A cubical is a kind of container. A cubical is open and enterable.
+The plural of cubical is cubicles. A cubical is proper-named.
+Rule for printing room description details of a cubical: stop.
+Rule for printing the name of a cubical: say "[bold type][printed name][roman type] [bracket][start-date]-[end-date] [company][close bracket]".
+Some cubicles in the offices are defined by the Table of Past Employment.
+After printing the locale description of the offices, say "You can view each employment by typing EXAMINE <CUBICAL NAME or LETTER>."
+Understand "employer" or "employers" as all cubicles.
+
+Understand "plaque" or "plaques" as all cubicles.
+
+Understand "terminal" or "terminals" or "screen" or "screens" or "computer" or "computers" as all cubicles.
+
+A chair is scenery. The description is "Each cubical has a chair and they are all the same. Cushioned seat, cushioned back, and wheels on the feet. If you seen one then you've seen them all."
+Understand "chairs" as a chair.
+
+Instead of examining a cubical:
+	clear only the main screen;
+	say "You step into [the noun] and easily see the following displayed on the terminal screen:[paragraph break]";
+	say "[company]	[start-date]-[end-date][line break][job-location][line break][bold type][job-title][roman type][paragraph break][job-summary][paragraph break]Responsibilities:[line break][responsibilities]";
+	pause the game;
+	clear the screen;
+	repeat with the candy running through the candies contained in the noun:
+		move the candy to the player;
+		say "[conditional paragraph break]You find [a candy] and decide to take it as a reward.";
+	try looking.
+
+Section 2 - Past Employment
+
+Table of Past Employment
+cubical	start-date	end-date	company	job-location	job-title	job-summary	responsibilities
+Cubical A	"Mar 2010"	"Present"	"Yale New Haven Hospital"		"New Haven, CT"	"Medical Simulation Specialist"	"This is a multifaceted role or [italic type]jack-of-all-trades[roman type] ranging from mechanical maintenance of Simulation manikin hardware to maintaining, programming, diagnosing, and fixing several types of computer hardware. I Built and installed equipment and cables for several Simulation centers which notably included Network switches and routers, Linux servers, Mac servers, Windows clients. I also am actively developing software solutions for the department where I actively develop and research web applications and software solutions."	"Develop and maintain the technology for medical case simulations. Manage equipment and maintenance. Develop new systems and procedures. Educate on how to use and care for equipment. Computer and equipment support. Educating users on proper computer usage. Sole developer for department wide scheduling web based application. Implemented tracking web application for technical issues (Redmine). Sole developer for equipment tracking web based application using Mobile Smartphones and Barcode scanning technology. Implemented IRC based communication servers. Administered department Linux server, Mac server and Backup drives. Built three simulation centers including audio and visual components, Computer networks, Electrical and construction. Directly interfaced with simulator equipment companies for technical support, maintenance schedules, ordering of parts. Directly responsible for preventative maintenance on all equipment. [bold type]Supervisory role:[roman type]Managed day to day technical operations of the simulation center. Provided direction and leadership to those under me creating an environment that fosters teamwork, service excellence and a positive work experience. Assured that all simulations are run effectively, on time, and staff is scheduled accordingly. Performed employee performance reviews and assisted in the hiring of new employees. Completed several management training courses and programs."
+Cubical B	"Sep 2003"	"Feb 2011"	"Multiple EMS Agencies"	"Connecticut"	"Emergency Medical Technician - Paramedic"	"American Medical Response, New Haven, CT[line break]American Ambulance, Norwich, CT[line break]Groton Volunteer Ambulance Association, Groton, CT[paragraph break]I worked as a paramedic and volunteered. During this time I studied and did some work on the side programming."	"Emergency response to medical calls that are crisis situations. Communicate calmly and clearly to the patient and the hospital staff. Work in a team approach. Volunteer as needed for shift duty."
+Cubical C	"Nov 2007"	"Dec 2007"	"Mr. Joy, Inc."	"CA (telecommuted)"	"Ruby on Rails Developer"	"I was tasked to integrate a Ruby on Rails project with PayPal's API. My contract was ended after I completed the project."	"Developed payment processing integration to a Ruby On Rails web application using PayPal's Instant Payment Notification protocol. Implementation of Subversion Repositories."
+
 
 Chapter 3 - Hall of Achievements
 
@@ -115,6 +151,25 @@ Chapter 1 - Dungeon
 Section 1 - Rooms
 
 The dungeon is down from the trapdoor. "TODO: dungeon desc.".
+
+Chapter 2 - Candy
+
+A candy is a kind of thing.
+Instead of tasting a candy:
+	say "You think 'just a small taste' but in truth it was so good you needed more and so you ate [the noun] instead.";
+	try eating the noun.
+Instead of eating a candy:
+	remove the noun from play;
+	say "[one of][The noun] tastes delicious.[or]You get a chill up your spine because [the noun] was so satisfying.[or]You feel a small bit of guilt for eating [the noun] but not enough to stop you from enjoying every bite.[purely at random]".
+
+A Mars bar is a candy contained in Cubical A. The description is "Featuring nougat, soft caramel, and almonds coated in milk chocolate".
+
+Chapter 3 - Misc, red herrings
+
+The sonic screwdriver is a device on the information desk. It is switched off. The description is "Who looks at a screwdriver and thinks, 'Oooh, this could be a little more sonic?'[paragraph break]What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?".
+Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
+	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
+
 
 
 Part 3 - Setup
@@ -150,7 +205,7 @@ Test me with "test lobby / test offices / test hall / test mezzanine / test trap
 
 Test lobby with "x desk / x stairs / enter stairs / g / s" in the main lobby.
 
-Test offices with "e / w" in the offices.
+Test offices with "e / w / x chair / x terminals / put screwdriver into A / look" in the offices holding the sonic screwdriver.
 
 Test hall with "w / e" in the hall of achievements.
 
