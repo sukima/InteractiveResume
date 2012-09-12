@@ -82,7 +82,9 @@ Instead of entering the staircase:
 
 Chapter 2 - Offices (past jobs)
 
-The offices are west of the main lobby. "TODO: Offices desc."
+The offices are west of the main lobby. "There two lines of cubicles running down the length of this room with a pathway down the center. Each cubical has a chair, computer terminal and a plaque that tells you the name of a past employee sorted by year (descending). The exit to [the main lobby] is to the east."
+
+A cubical is a kind of thing. It is an open container and enterable.
 
 Chapter 3 - Hall of Achievements
 
