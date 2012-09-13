@@ -22,17 +22,73 @@ Part 1 - The Business End
 
 Chapter 1 - Start
 
+Section 1 - Display messages
+
+To display on the (T - some text) the message (M - some text):
+	clear only the main screen;
+	say "You step into [the noun] and see the following[if T is not empty] displayed on the [T][end if]:[paragraph break]";
+	say "[M]";
+	pause the game;
+	clear the screen;
+	repeat with the candy running through the candies contained in the noun:
+		move the candy to the player;
+		say "[conditional paragraph break]You find [a candy] and decide to take it as a reward.";
+	say "[conditional paragraph break]You leave [the noun].";
+	try looking.
+
+To display the message (M - some text):
+	display on the "" the message M.
+
+Section 2 - Dividers
+
+A divider is a kind of container. A divider is scenery, open and enterable.
+	
+Instead of entering a divider, try examining the noun.
+
+Rule for printing room description details of a divider: stop.
+
+To say list of divider-contents for (T - a divider):
+	if T contains something:
+		say " (in which [is-are a list of things contained in T])".
+
+To print a list of dividers in (R - a room) with the header (H - text):
+	say "[bold type][H][roman type]:";
+	repeat with the item running through the dividers in R:
+		say "[line break]  - [the item][list of divider-contents for the item]";
+	say paragraph break.
+
+[Example use:
+	The museum is a room.
+
+	An exhibit is a kind of divider.
+
+	After printing the locale description of the museum:
+		print a list of dividers in the museum with the header "The Exhibits";
+		say "You can view each exhibit by typing EXAMINE <EXHIBIT NAME>."
+
+	The photography exhibit is an exhibit in the museum.
+]
+
+Chapter 2 - Main Rooms
+
 Section 1 - Lobby
 
 The Main Lobby is a room. "This is a large open lobby. It has a clean shiny marble floors and the ceiling is all glass allowing the sun to shine through. A large [staircase] starts behind [the information desk] leading to the second floor mezzanine which wraps around the lobby with glass balconies. On the ground floor you can see to the east a hallway with the words 'Hall of Achievements' carved into the marble arch. To the west is another marble arch labeled 'Offices (past jobs)'. To the north leads behind the staircase. The main entrance is to the south."
 
 Instead of going south while in the main lobby, say "I know it is a nice and sunny day outside. But don't you want to see what's inside first?"
 
-Section 2 - Information Desk
+Section 2 - The Mezzanine
+
+The Mezzanine is up from the main lobby. "The mezzanine wraps around the entire room. Through the large open space you can see [the main lobby] below. On the north wall is the continuation of the glass wall. The banister is made of glass and keeps you from falling over. There are windows running the length of the west and east walls. You can see through the west wall a laboratory. The plaque next to the open door reads 'Projects'. On the east wall you see what looks like a museum exhibit behind the windows. The open door is labeled 'Hobbies/Interests'.".
+
+Instead of going north while in the mezzanine, try examining the glass wall.
+Instead of going south while in the mezzanine, say "You can look down at the front steps from here. You can also see the turn about and your car there."
+
+Section 3 - Information Desk
 
 The information desk is scenery and a supporter in the main lobby. "A round desk.".
 
-Section 3 - Behind the staircase
+Section 4 - Behind the staircase
 
 A room called Behind the staircase is north of the lobby. "A floor to ceiling wall of glass stands to let even more light into this two floor lobby. The stairs create a small alcove as they go above your head. The more open portion of [the main lobby] is to the south."
 
@@ -62,7 +118,7 @@ white: 'lifestyle'
 [line break]green: 'secrets'
 [line break]red: 'floggers'".
 
-Section 4 - Backdrops and staircase
+Section 5 - Backdrops and staircase
 
 The sun is a backdrop. "The massive glass ceiling allows a lot of the sun to shine through lighting almost every corner of this massive two story lobby."
 It is in the main lobby, the mezzanine and behind the staircase.
@@ -81,37 +137,31 @@ Instead of entering the staircase:
 	-- the main lobby: try going up;
 	-- otherwise: say "You would need to first move to [the main lobby]."
 
-Chapter 2 - Offices (past jobs)
+Chapter 3 - Offices (past jobs)
 
 The offices are west of the main lobby. "There are two lines of cubicles running down the length of this room with a pathway down the center. Each cubical has a chair, computer terminal (on which looks like a display of each past employer) and a plaque that tells you the name of a past employer sorted by year (descending). The exit to [the main lobby] is to the east."
 
 Section 1 - Cubicles
 
-A cubical is a kind of container. A cubical is open and enterable.
+A cubical is a kind of divider.
 The plural of cubical is cubicles. A cubical is proper-named.
-Rule for printing room description details of a cubical: stop.
 Rule for printing the name of a cubical: say "[bold type][printed name][roman type] [bracket][start-date]-[end-date] [company][close bracket]".
-Some cubicles in the offices are defined by the Table of Past Employment.
-After printing the locale description of the offices, say "You can view each employment by typing EXAMINE <CUBICAL NAME or LETTER>."
+
+After printing the locale description of the offices:
+	print a list of dividers in the offices with the header "The Cubicles";
+	say "You can view each employment by typing EXAMINE <CUBICAL NAME or LETTER>."
+
 Understand "employer" or "employers" as all cubicles.
-
 Understand "plaque" or "plaques" as all cubicles.
-
 Understand "terminal" or "terminals" or "screen" or "screens" or "computer" or "computers" as all cubicles.
 
 A chair is scenery. The description is "Each cubical has a chair and they are all the same. Cushioned seat, cushioned back, and wheels on the feet. If you seen one then you've seen them all."
 Understand "chairs" as a chair.
 
 Instead of examining a cubical:
-	clear only the main screen;
-	say "You step into [the noun] and easily see the following displayed on the terminal screen:[paragraph break]";
-	say "[company]	[start-date]-[end-date][line break][job-location][line break][bold type][job-title][roman type][paragraph break][job-summary][paragraph break]Responsibilities:[line break][responsibilities]";
-	pause the game;
-	clear the screen;
-	repeat with the candy running through the candies contained in the noun:
-		move the candy to the player;
-		say "[conditional paragraph break]You find [a candy] and decide to take it as a reward.";
-	try looking.
+	display on the "terminal screen" the message "[company]	[start-date]-[end-date][line break][job-location][line break][bold type][job-title][roman type][paragraph break][job-summary][paragraph break]Responsibilities:[line break][responsibilities]".
+
+Some cubicles in the offices are defined by the Table of Past Employment.
 
 Section 2 - Past Employment
 
@@ -125,26 +175,44 @@ Cubical E	"Jun 2001"	"Jun 2004"	"Weaver Electrical"	"New London, CT"	"Electricia
 Cubical F	"Sep 2000"	"Jun 2001"	"Channelwave Software, Inc."	"Camberidge, MA"	"Java Web Application Developer"	"I was part of the development team for a large Java servlet based application for tracking sales and business contacts and customers."	"Extensive JAVA development of Web Based applications, designed information handling for network transmissions. Implemented Java Model / View / Controller designs, installation and administration of CVS repositories. Installed and maintained source management software. Extensive use of Linux and Windows NT Environments."
 
 
-Chapter 3 - Hall of Achievements
+Chapter 4 - Hall of Achievements
 
 The hall of achievements is east of the main lobby. "TODO: hall of achievements desc."
 
-Chapter 4 - Hobbies / Interests / Projects
+Chapter 5 - Hobbies / Interests / Projects
 
-Section 1 - The Mezzanine
-
-The Mezzanine is up from the main lobby. "The mezzanine wraps around the entire room. Through the large open space you can see [the main lobby] below. On the north wall is the continuation of the glass wall. The banister is made of glass and keeps you from falling over. There are windows running the length of the west and east walls. You can see through the west wall a laboratory. The plaque next to the open door reads 'Projects'. On the east wall you see what looks like a museum exhibit behind the windows. The open door is labeled 'Hobbies/Interests'.".
-
-Instead of going north while in the mezzanine, try examining the glass wall.
-Instead of going south while in the mezzanine, say "You can look down at the front steps from here. You can also see the turn about and your car there."
-
-Section 2 - Projects (laboratory)
+Section 1 - Projects (laboratory)
 
 The laboratory is west of the mezzanine. "TODO: laboratory desc."
 
-Section 3 - Hobbies/Interests (museum)
+Section 2 - Hobbies/Interests (museum)
 
-The museum is east of the mezzanine. "TODO: museum desc."
+The museum is east of the mezzanine. "A short well used carpet lines the large room. Pictures and text on the walls all describing different aspects of Devin. What his likes are and his hobbies. The lighting is dim here to set the mood. The few exhibits are separated by cubical walls that are spread out through the room. The room has a standard drop ceiling and some small light fixtures that seem to put out more heat then they do light. [The mezzanine] is back to the west."
+
+The walls are scenery. The description is "Several pictures line the walls. Of note are several examples of Devin's photography and a small history of his use of computers which reads:[paragraph break]Devin started with computers when his parents purchased a [bold type]Commodore 64[roman type] system for the house. At the time there was not many programs available so Devin read the manual which was a nearly a BASIC programming language text book. Learning how to develop my own programs and a bit of 'hacking' other programs Devin found something he really liked.[paragraph break]A few years later an upgrade gave Devin the opportunity to use an IBM clone with DOS and Windows 3.1. This is where he found games like Doom, Myst, Kings Quest. And developed his love for adventure games. He also taught himself all about web sites.[paragraph break]Through out high school he continued his programming with pascal, PERL, C and eventually PHP. He would soak up a new programming language at a fast rate.[paragraph break]He took a job right out of the first year of college after learning Java. While working he found a few Sun computers and a revolution of possibilities past Windows was revealed. Falling in love with the Unix environment he quickly learned everything he could about Linux. Along with shell programming and system administration.[paragraph break]After several years he then developed a love for Apple products when they release Mac OS X which was Unix based. Since then he has continued to pursue his learning to include Ruby, Rails, JavaScript, Objective C, and many more.".
+Understand "wall" or "pictures" as the walls.
+
+An exhibit is a kind of divider.
+
+After printing the locale description of the museum:
+	print a list of dividers in the museum with the header "The Exhibits";
+	say "You can view each exhibit by typing EXAMINE <EXHIBIT NAME>."
+
+[This allows us to use the enter and view style of displaying text (clear screen first)]
+Instead of examining an exhibit:
+	display the message "[description]".
+
+The photography exhibit is an exhibit in the museum.
+Understand "photo" or "photos" as the photography exhibit.
+
+The interactive fiction exhibit is an exhibit in the museum.
+Understand "if" as the interactive fiction exhibit.
+
+The popular culture exhibit is an exhibit in the museum.
+Understand "tv" or "television" or "movie" or "movies" or "music" as the popular culture exhibit.
+
+The games exhibit is an exhibit in the museum.
+Understand "game" or "video" or "videogame" or "videogames" as the games exhibit.
 
 
 Part 2 - The Fun Parts
@@ -167,6 +235,9 @@ Instead of eating a candy:
 
 A Mars bar is a candy contained in Cubical A. The description is "Featuring nougat, soft caramel, and almonds coated in milk chocolate".
 
+A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar".
+The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
+
 Chapter 3 - Misc, red herrings
 
 The sonic screwdriver is a device on the information desk. It is switched off. The description is "Who looks at a screwdriver and thinks, 'Oooh, this could be a little more sonic?'[paragraph break]What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?".
@@ -188,7 +259,6 @@ When play begins:
 
 Instead of pushing something, say "You push [the noun]. Nothing seems to have happened."
 
-
 Chapter 2 - Menu Options
 
 [To select a specific menu option:
@@ -203,6 +273,16 @@ title	subtable	description	toggle
 
 
 Chapter 3 - Testing - not for release
+
+When play begins (this is the run property checks at the start of play rule): 
+	repeat with item running through things: 
+		if the item is not the light-meter and the item is not a cubical and the description of the item is "": 
+			say "[item] has no description."
+
+After reading a command (this is the ignore beta-comments rule): 
+	if the player's command matches the regular expression "^\p": 
+		say "(Noted.)"; 
+		reject the player's command.
 
 Test me with "test lobby / test offices / test hall / test mezzanine / test trapdoor".
 
