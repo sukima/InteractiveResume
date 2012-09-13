@@ -187,16 +187,16 @@ The laboratory is west of the mezzanine. "TODO: laboratory desc."
 
 Section 2 - Hobbies/Interests (museum)
 
-The museum is east of the mezzanine. "A short well used carpet lines the large room. Pictures and text on the walls all describing different aspects of Devin. What his likes are and his hobbies. The lighting is dim here to set the mood. The few exhibits are separated by cubical walls that are spread out through the room. The room has a standard drop ceiling and some small light fixtures that seem to put out more heat then they do light. [The mezzanine] is back to the west."
+The museum is east of the mezzanine. "A short well used carpet lines the large room. Pictures and text on the walls displaying a brief history of Devin. What his likes are and his hobbies. The lighting is dim here to set the mood. The few exhibits are separated by cubical walls that are spread out through the room. The room has a standard drop ceiling and some small light fixtures that seem to put out more heat then they do light. [The mezzanine] is back to the west."
 
-The walls are scenery. The description is "Several pictures line the walls. Of note are several examples of Devin's photography and a small history of his use of computers which reads:[paragraph break]Devin started with computers when his parents purchased a [bold type]Commodore 64[roman type] system for the house. At the time there was not many programs available so Devin read the manual which was a nearly a BASIC programming language text book. Learning how to develop my own programs and a bit of 'hacking' other programs Devin found something he really liked.[paragraph break]A few years later an upgrade gave Devin the opportunity to use an IBM clone with DOS and Windows 3.1. This is where he found games like Doom, Myst, Kings Quest. And developed his love for adventure games. He also taught himself all about web sites.[paragraph break]Through out high school he continued his programming with pascal, PERL, C and eventually PHP. He would soak up a new programming language at a fast rate.[paragraph break]He took a job right out of the first year of college after learning Java. While working he found a few Sun computers and a revolution of possibilities past Windows was revealed. Falling in love with the Unix environment he quickly learned everything he could about Linux. Along with shell programming and system administration.[paragraph break]After several years he then developed a love for Apple products when they release Mac OS X which was Unix based. Since then he has continued to pursue his learning to include Ruby, Rails, JavaScript, Objective C, and many more.".
-Understand "wall" or "pictures" as the walls.
+The walls are scenery in the museum. The description is "Several pictures line the walls. Of note are several examples of Devin's photography and a small history of his use of computers which reads:[paragraph break]Devin started with computers when his parents purchased a [bold type]Commodore 64[roman type] system for the house. At the time there was not many programs available so Devin read the manual which was a nearly a BASIC programming language text book. Learning how to develop my own programs and a bit of 'hacking' other programs Devin found something he really liked.[paragraph break]A few years later an upgrade gave Devin the opportunity to use an IBM clone with DOS and Windows 3.1. This is where he found games like Doom, Myst, Kings Quest. And developed his love for adventure games. He also taught himself all about web sites.[paragraph break]Through out high school he continued his programming with pascal, PERL, C and eventually PHP. He would soak up a new programming language at a fast rate.[paragraph break]He took a job right out of the first year of college after learning Java. While working he found a few Sun computers and a revolution of possibilities past Windows was revealed. Falling in love with the Unix environment he quickly learned everything he could about Linux. Along with shell programming and system administration.[paragraph break]After several years he then developed a love for Apple products when they release Mac OS X which was Unix based. Since then he has continued to pursue his learning to include Ruby, Rails, JavaScript, Objective C, and many more.".
+Understand "wall" or "pictures" or "history" or "text" as the walls.
 
 An exhibit is a kind of divider.
 
 After printing the locale description of the museum:
 	print a list of dividers in the museum with the header "The Exhibits";
-	say "You can view each exhibit by typing EXAMINE <EXHIBIT NAME>."
+	say "You can view each exhibit by typing EXAMINE <EXHIBIT NAME>.[line break]Or read a brief history by EXAMINE HISTORY."
 
 [This allows us to use the enter and view style of displaying text (clear screen first)]
 Instead of examining an exhibit:
@@ -240,10 +240,9 @@ The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,1
 
 Chapter 3 - Misc, red herrings
 
-The sonic screwdriver is a device on the information desk. It is switched off. The description is "Who looks at a screwdriver and thinks, 'Oooh, this could be a little more sonic?'[paragraph break]What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?".
+The sonic screwdriver is a device on the information desk. It is switched off. The description is "JACK HARKNESS: 'Who looks at a screwdriver and thinks, [']Oooh, this could be a little more sonic?[']'[line break]DR. WHO: 'What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?'[line break]				-- 'Dr. Who' television show, BBC".
 Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
 	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
-
 
 
 Part 3 - Setup
@@ -284,7 +283,7 @@ After reading a command (this is the ignore beta-comments rule):
 		say "(Noted.)"; 
 		reject the player's command.
 
-Test me with "test lobby / test offices / test hall / test mezzanine / test trapdoor".
+Test me with "test lobby / test offices / test hall / test mezzanine / test museum / test labs / test trapdoor".
 
 Test lobby with "x desk / x stairs / enter stairs / g / s" in the main lobby.
 
@@ -294,7 +293,13 @@ Test hall with "w / e" in the hall of achievements.
 
 Test mezzanine with "d / u / n / s / x sun / x wall" in the mezzanine.
 
+Test museum with "w / e / x history / put screwdriver into photography / look" in the museum holding the sonic screwdriver.
+
+Test labs with "e / w" in the museum holding the sonic screwdriver.
+
 Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u" in behind the staircase.
+
+Test dungeon with "u / d" in the dungeon.
 
 
 [ vim:set noet wrap ts=2: ]
