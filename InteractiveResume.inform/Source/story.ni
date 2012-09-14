@@ -169,9 +169,8 @@ After printing the locale description of the offices:
 	print a list of dividers in the offices with the header "The Cubicles";
 	say "You can view each employment by typing EXAMINE <CUBICAL NAME or LETTER>."
 
-Understand "employer" or "employers" as all cubicles.
-Understand "plaque" or "plaques" as all cubicles.
-Understand "terminal" or "terminals" or "screen" or "screens" or "computer" or "computers" as all cubicles.
+Understand "plaque" or "employer" as a cubicles.
+Understand "plaques" or "employers" as all cubicles.
 
 A chair is scenery. The description is "Each cubical has a chair and they are all the same. Cushioned seat, cushioned back, and wheels on the feet. If you seen one then you've seen them all."
 Understand "chairs" as a chair.
@@ -196,15 +195,41 @@ Cubical F	"Sep 2000"	"Jun 2001"	"Channelwave Software, Inc."	"Camberidge, MA"	"J
 Chapter 4 - Hall of Achievements
 
 The hall of achievements is east of the main lobby. "There is a wall sealing off a good portion of this room with large signs that read [bold type]Under Construction[roman type]".
+The construction equipment is here.
 
 Chapter 5 - Hobbies / Interests / Projects
 
 Section 1 - Projects (laboratory)
 
-The laboratory is west of the mezzanine. "TODO: laboratory desc."
-The lab place holder is here.
+The laboratory is west of the mezzanine. "Several counters are lined in a row. Each counter On them is several types of scientific equipment including a computer that displays information about each project.[paragraph break]You can also view these projects at: [fixed letter spacing]http://tritarget.org/projects/[variable letter spacing]".
 
-Section 2 - Hobbies/Interests (museum)
+After printing the locale description of the laboratory:
+	print a list of dividers in the laboratory with the header "The Lab Stations";
+	say "You can view each project by typing EXAMINE <STATION NAME>."
+
+A station is a kind of divider.
+Rule for printing the name of a station: say "[bold type][printed name][roman type] [italic type]([lang])[roman type] lab station".
+Understand "lab" or "counter" as a station.
+Understand "labs" or "counters" as all stations.
+Instead of putting something on a station:
+	move the noun to the second noun;
+	say "You put [the noun] onto the counter in [the second noun]."
+
+Instead of examining a station:
+	display on "the computer screen" the message "[description][paragraph break]Languages: [lang][paragraph break][fixed letter spacing][url][variable letter spacing]".
+
+Some stations in the laboratory are defined by the Table of Projects.
+
+Section 2 - Table of Projects
+
+Table of Projects
+station	description	url	lang
+the Equipment Status Viewer	"A redmine plugin that tracks equipment and there last know location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
+the SkyQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
+the bjurl	"A PERL plugin for irssi that collects URLs from a channel and dynamically updates a JavaScript based website for easy opening in a remote browser. Includes WebKit Desktop Notifications and jQuery AJAX Support."	"http://sukima.github.com/bjurl"	"PERL, jQuery"
+the SimNotify	"A Ruby on Rails scheduling program for medical simulation centers. This app is very site specific for a simulation center that I work for. This project is my attempt to allow people to schedule a simulation by entering in key data needed and the administrators can place that scheduled session on a calendar."	"http://sukima.github.com/SimNotify/"	"Ruby on Rails"
+
+Section 3 - Hobbies/Interests (museum)
 
 The museum is east of the mezzanine. "A short well used carpet lines the large room. Pictures and text on the walls displaying a brief history of Devin. What his likes are and his hobbies. The lighting is dim here to set the mood. The few exhibits are separated by cubical walls that are spread out through the room. The room has a standard drop ceiling and some small light fixtures that seem to put out more heat then they do light. [The mezzanine] is back to the west."
 
@@ -291,6 +316,9 @@ When play begins:
 	choose row 1 in Table of Basic Help Options;
 	now description entry is "I wrote this game because I thought it would be fun. Well, actually because I knew it would be fun. I'm a huge Interactive Fiction fan. I love playing and writing them. When I had the gumption to make one that described myself I figure 'Hey, why not?'[paragraph break]Getting to know someone is like an adventure game in a sense that you have to explore that person. Get to know him or her. Exploring this game is a metaphor for getting to know me and my personality. My quirks and my past accomplishments.[paragraph break]I also wanted to push the boundaries of social norms. I wanted some puzzle to solve that was outside that ever so popular [italic type]box[roman type]. I hope that with a bit of nostalgia from the 1980's I have successfully jumped that proverbial fence. And more to the point I truly hope you have found this as entertaining and fun as I had making it.[paragraph break]So without further ado... Welcome to The Devin Weaver Company.[paragraph break]Please enjoy your stay. Check out [The hall of achievements] or [The museum]. We have [a laboratory] that describe projects that have been worked on. Or stop by [The offices] to see where the administration magic happens.[paragraph break][italic type]There is also a dungeon for adults only. See if you can find it.[roman type][paragraph break]Sincerely, Devin Weaver <suki (at) tritarget.org>".
 
+[A generic rule just to make things easier since there seems to be more of these through the game.]
+Understand "terminal" or "terminals" or "screen" or "screens" or "computer" or "computers" as all dividers.
+
 Chapter 2 - Menu Options
 
 [To select a specific menu option:
@@ -317,17 +345,17 @@ After reading a command (this is the ignore beta-comments rule):
 
 Test me with "test lobby / test offices / test hall / test mezzanine / test museum / test labs / test trapdoor".
 
-Test lobby with "x desk / x stairs / enter stairs / g / s" in the main lobby.
+Test lobby with "x desk / x stairs / enter stairs / g / s / taste bar" in the main lobby.
 
-Test offices with "e / w / x chair / x terminals / put screwdriver into A / look" in the offices holding the sonic screwdriver.
+Test offices with "e / w / x chair / x terminals / put screwdriver in A / look" in the offices holding the sonic screwdriver.
 
 Test hall with "w / e" in the hall of achievements.
 
 Test mezzanine with "d / u / n / s / x sun / x wall" in the mezzanine.
 
-Test museum with "w / e / x history / put screwdriver into photography / look" in the museum holding the sonic screwdriver.
+Test museum with "w / e / x history / put screwdriver in photography / look / x photos / eat bar" in the museum holding the sonic screwdriver.
 
-Test labs with "e / w" in the museum holding the sonic screwdriver.
+Test labs with "e / w / x bjurl / put screwdriver on bjurl / look" in the laboratory holding the sonic screwdriver.
 
 Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u" in behind the staircase.
 
