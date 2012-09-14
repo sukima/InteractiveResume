@@ -24,20 +24,41 @@ Chapter 1 - Start
 
 Section 1 - Display messages
 
-To display on the (T - some text) the message (M - some text):
+To enter the divider with (T - text) in it:
+	say "You step into [the noun] and see the following[if T is not empty] displayed on [T][end if]:[paragraph break]".
+
+To leave the divider:
+	say "[paragraph break]You leave [the noun].".
+
+To check for candy:
+	repeat with the candy running through the candies contained in the noun:
+		move the candy to the player;
+		say "[paragraph break]You find [a candy] and decide to take it as a reward.".
+
+To display on (T - text) the message (M - some text):
+	enter the divider with T in it;
+	say "[M]";
+	check for candy;
+	leave the divider.
+
+To display on (T - text) the long message (M - some text):
 	clear only the main screen;
-	say "You step into [the noun] and see the following[if T is not empty] displayed on the [T][end if]:[paragraph break]";
+	enter the divider with T in it;
 	say "[M]";
 	pause the game;
 	clear the screen;
-	repeat with the candy running through the candies contained in the noun:
-		move the candy to the player;
-		say "[conditional paragraph break]You find [a candy] and decide to take it as a reward.";
-	say "[conditional paragraph break]You leave [the noun].";
+	check for candy;
+	leave the divider;
 	try looking.
 
-To display the message (M - some text):
-	display on the "" the message M.
+To display the long message (M - some text):
+	display on "" the long message M.
+
+To display the message (M - text):
+	display on "" the message M.
+
+Instead of examining a divider:
+	display the message "[description]".
 
 Section 2 - Dividers
 
@@ -162,7 +183,7 @@ A chair is scenery. The description is "Each cubical has a chair and they are al
 Understand "chairs" as a chair.
 
 Instead of examining a cubical:
-	display on the "terminal screen" the message "[company]	[start-date]-[end-date][line break][job-location][line break][bold type][job-title][roman type][paragraph break][job-summary][paragraph break]Responsibilities:[line break][responsibilities]".
+	display on "the terminal screen" the long message "[company]	[start-date]-[end-date][line break][job-location][line break][bold type][job-title][roman type][paragraph break][job-summary][paragraph break]Responsibilities:[line break][responsibilities]".
 
 Some cubicles in the offices are defined by the Table of Past Employment.
 
@@ -201,13 +222,11 @@ After printing the locale description of the museum:
 	print a list of dividers in the museum with the header "The Exhibits";
 	say "You can view each exhibit by typing EXAMINE <EXHIBIT NAME>.[line break]Or read a brief history by EXAMINE HISTORY."
 
-[This allows us to use the enter and view style of displaying text (clear screen first)]
-Instead of examining an exhibit:
-	display the message "[description]".
-
 The photography exhibit is an exhibit in the museum.
 The description is "Devin enjoys taking pictures especially pictures of nature. To see his works please visit:[paragraph break][fixed letter spacing]http://tritarget.org/photography/[variable letter spacing][paragraph break]However, he also loves a more involved type of photography called 360 Panoramas or virtual tour. Using viewers the user can see a picture completely around the view point including up and down. You can see many examples of panoramas Devin has made at the same above address.".
 Understand "photo" or "photos" as the photography exhibit.
+[This allows us to use the enter and view style of displaying text (clear screen first)]
+Instead of examining the photography exhibit, display the long message "[description]".
 
 The interactive fiction exhibit is an exhibit in the museum.
 Understand "if" as the interactive fiction exhibit.
