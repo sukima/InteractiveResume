@@ -278,7 +278,7 @@ The sonic screwdriver is a device on the information desk. It is switched off. T
 Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
 	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
 		
-instead of locking or unlocking the trapdoor with the sonic screwdriver, say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work with wood."
+Instead of locking or unlocking the trapdoor with the sonic screwdriver, say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work on wood."
 
 
 Part 3 - Setup
