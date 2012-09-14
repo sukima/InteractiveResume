@@ -235,6 +235,7 @@ The popular culture exhibit is an exhibit in the museum.
 Understand "tv" or "television" or "movie" or "movies" or "music" as the popular culture exhibit.
 
 The games exhibit is an exhibit in the museum.
+The description is "Devin loves adventure games. His favorites of all time include: Zelda, Myst, Zork series. He also had a good deal of interest in the classic Quake, Doom, and Duke Nukem 3D. He has interests in game creating especially the use of 3D mesh work like Blender 3D and LightWave."
 Understand "game" or "video" or "videogame" or "videogames" as the games exhibit.
 
 
