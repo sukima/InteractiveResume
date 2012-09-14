@@ -212,8 +212,8 @@ Rule for printing the name of a station: say "[bold type][printed name][roman ty
 Understand "lab" or "counter" as a station.
 Understand "labs" or "counters" as all stations.
 Instead of putting something on a station:
-	move the noun to the second noun;
-	say "You put [the noun] onto the counter in [the second noun]."
+	say "You put [the noun] onto the counter in [the second noun].";
+	silently try inserting the noun into the second noun.
 
 Instead of examining a station:
 	display on "the computer screen" the message "[description][paragraph break]Languages: [lang][paragraph break][fixed letter spacing][url][variable letter spacing]".
@@ -225,7 +225,7 @@ Section 2 - Table of Projects
 Table of Projects
 station	description	url	lang
 the Equipment Status Viewer	"A redmine plugin that tracks equipment and there last know location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
-the SkyQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
+the SkiQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
 the bjurl	"A PERL plugin for irssi that collects URLs from a channel and dynamically updates a JavaScript based website for easy opening in a remote browser. Includes WebKit Desktop Notifications and jQuery AJAX Support."	"http://sukima.github.com/bjurl"	"PERL, jQuery"
 the SimNotify	"A Ruby on Rails scheduling program for medical simulation centers. This app is very site specific for a simulation center that I work for. This project is my attempt to allow people to schedule a simulation by entering in key data needed and the administrators can place that scheduled session on a calendar."	"http://sukima.github.com/SimNotify/"	"Ruby on Rails"
 
@@ -278,6 +278,26 @@ The sign is part of the bust. The description is "It reads:[paragraph break]What
 
 A wooden cross is a supporter and enterable in the dungeon.
 Molly is a female person. She is on the cross.
+To tie her up:
+	move molly to the cross;
+	say "She happily jumps on the cross and you tie her limbs to it."
+Instead of asking molly to try doing something:
+	if molly is supported by the cross:
+		say "She is bound to the cross and can not do that.";
+	otherwise:
+		say "She seems to defy your command."
+Instead of asking molly to try entering the cross when molly is not supported by the cross:
+	tie her up;
+Instead of taking molly when molly is supported by the cross:
+	move molly to the dungeon;
+	say "You untie her and she begrudgingly steps down."
+Instead of tying molly to the cross when molly is not supported by the cross:
+	tie her up.
+
+Understand "untie [something]" as taking.
+
+Instead of attacking molly, say "TODO". [TODO]
+Instead of kissing molly, say "TODO". [TODO]
 
 Chapter 2 - Candy
 
@@ -289,11 +309,15 @@ Instead of eating a candy:
 	remove the noun from play;
 	say "[one of][The noun] tastes delicious.[or]You get a chill up your spine because [the noun] was so satisfying.[or]You feel a small bit of guilt for eating [the noun] but not enough to stop you from enjoying every bite.[purely at random]".
 
+Before listing contents: group candies together.
+
 A Mars bar is a candy contained in Cubical A. The description is "Featuring nougat, soft caramel, and almonds coated in milk chocolate".
 
 A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar". The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
 
 A Snickers bar is a candy on the information desk. The description is "It consists of nougat topped with caramel and peanuts."
+
+A klondike bar is a candy contained in the SkiQuery. The printed name is "melting Klondike bar". The description is "A slushy gooey ice cream treat. A water vanilla center surrounded by a cracked and melted chocolate shell. The soaked wrapper makes a feeble attempt to contain the mess.".
 
 Chapter 3 - Misc, red herrings
 
