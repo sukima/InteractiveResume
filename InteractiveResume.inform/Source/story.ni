@@ -110,7 +110,8 @@ Section 3 - Information Desk
 The information desk is scenery and a supporter in the main lobby.
 The description is "The desk wraps around in a circle. Made of the particle wood and painted white with linoleum on the top.".
 
-A brochure is a thing on the information desk. The description is "Welcome to The Devin Weaver Company.[paragraph break]Please enjoy your stay. Check out [The hall of achievements] or [The museum]. We have [a laboratory] that describe projects that have been worked on. Or stop by [The offices] to see where the administration magic happens.[paragraph break][italic type]There is also a dungeon for adults only. See if you can find it.[roman type]".
+A brochure is a thing on the information desk. The description is "Try typing HELP instead."
+Instead of examining the brochure, try asking for help.
 
 Section 4 - Behind the staircase
 
@@ -124,11 +125,13 @@ A bust of Devin Weaver is here. The description is "Standing on a marble pedesta
 
 Understand "devin" or "weaver" or "pedestal" as the bust.
 
-The green button, red button, white button and black button are parts of the bust.
+A button is a kind of thing.
+The green button, red button, white button and black button are buttons and part of the bust.
 The description of the green button is "An arcade style button the color of green.".
 The description of the red button is "An arcade style button the color of red.".
 The description of the white button is "An arcade style button the color of white.".
 The description of the black button is "An arcade style button the color of black.".
+Instead of pushing a button, say "You push [the noun]. Nothing seems to have happened."
 Instead of pushing the green button:
   now the trapdoor is unlocked;
   say "You push [the noun]. You hear a [italic type]click[roman type] coming from [the trapdoor]."
@@ -259,8 +262,7 @@ Instead of eating a candy:
 
 A Mars bar is a candy contained in Cubical A. The description is "Featuring nougat, soft caramel, and almonds coated in milk chocolate".
 
-A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar".
-The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
+A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar". The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
 
 A Snickers bar is a candy on the information desk. The description is "It consists of nougat topped with caramel and peanuts."
 
@@ -271,26 +273,11 @@ Section 1 - A sonic screwdriver
 The sonic screwdriver is a device on the information desk. It is switched off. The description is "JACK HARKNESS: 'Who looks at a screwdriver and thinks, [']Oooh, this could be a little more sonic?[']'[line break]DR. WHO: 'What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?'[line break]				-- 'Dr. Who' television show, BBC".
 Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
 	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
-
-Instead unlocking the trapdoor with the sonic screwdriver:
-	if the sonic screwdriver is switched on:
-		now the trapdoor is unlocked;
-		now the sonic screwdriver is switched off;
-		say "You hear an click from [the trapdoor]. Satisfied with your success, you turn [the sonic screwdriver] off.";
-	otherwise:
-		say "Nothing happens. [italic type]You have to turn [the sonic screwdriver] on first.[roman type][paragraph break]".
-
-After locking the trapdoor with the sonic screwdriver:
-	if the sonic screwdriver is switched on:
-		now the trapdoor is unlocked;
-		now the sonic screwdriver is switched off;
-		say "You hear an click from [the trapdoor]. Satisfied with your success, you turn [the sonic screwdriver] off.";
-	otherwise:
-		say "Nothing happens. [italic type]You have to turn [the sonic screwdriver] on first.[roman type][paragraph break]".
+		
+instead of locking or unlocking the trapdoor with the sonic screwdriver, say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work with wood."
 
 
 Part 3 - Setup
-
 
 Chapter 1 - Game Mechanics
 
@@ -298,9 +285,7 @@ Use no scoring.
 
 When play begins:
 	choose row 1 in Table of Basic Help Options;
-	now description entry is "I wrote this game because I thought it would be fun. Well, actually because I knew it would be fun. I'm a huge Interactive Fiction fan. I love playing and writing them. When I had the gumption to make one that described myself I figure 'Hey, why not?'[paragraph break]Getting to know someone is like an adventure game in a sense that you have to explore that person. Get to know him or her. Exploring this game is a metaphor for getting to know me and my personality. My quirks and my past accomplishments.[paragraph break]I also wanted to push the boundaries of social norms. I wanted some puzzle to solve that was outside that ever so popular [italic type]box[roman type]. I hope that with a bit of nostalgia from the 1980's I have successfully jumped that proverbial fence. And more to the point I truly hope you have found this as entertaining and fun as I had making it.[paragraph break]Sincerely, Devin Weaver <suki (at) tritarget.org>".
-
-Instead of pushing something, say "You push [the noun]. Nothing seems to have happened."
+	now description entry is "I wrote this game because I thought it would be fun. Well, actually because I knew it would be fun. I'm a huge Interactive Fiction fan. I love playing and writing them. When I had the gumption to make one that described myself I figure 'Hey, why not?'[paragraph break]Getting to know someone is like an adventure game in a sense that you have to explore that person. Get to know him or her. Exploring this game is a metaphor for getting to know me and my personality. My quirks and my past accomplishments.[paragraph break]I also wanted to push the boundaries of social norms. I wanted some puzzle to solve that was outside that ever so popular [italic type]box[roman type]. I hope that with a bit of nostalgia from the 1980's I have successfully jumped that proverbial fence. And more to the point I truly hope you have found this as entertaining and fun as I had making it.[paragraph break]So without further ado... Welcome to The Devin Weaver Company.[paragraph break]Please enjoy your stay. Check out [The hall of achievements] or [The museum]. We have [a laboratory] that describe projects that have been worked on. Or stop by [The offices] to see where the administration magic happens.[paragraph break][italic type]There is also a dungeon for adults only. See if you can find it.[roman type][paragraph break]Sincerely, Devin Weaver <suki (at) tritarget.org>".
 
 Chapter 2 - Menu Options
 
@@ -314,7 +299,6 @@ title	subtable	description	toggle
 "Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
 ["Settings"	Table of Setting Options	--	--]
 
-
 Chapter 3 - Testing - not for release
 
 When play begins (this is the run property checks at the start of play rule): 
@@ -323,7 +307,7 @@ When play begins (this is the run property checks at the start of play rule):
 			say "[item] has no description."
 
 After reading a command (this is the ignore beta-comments rule): 
-	if the player's command matches the regular expression "^\p": 
+	if the player's command matches the regular expression "^(\p|\*)": 
 		say "(Noted.)"; 
 		reject the player's command.
 
