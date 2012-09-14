@@ -196,12 +196,14 @@ Cubical F	"Sep 2000"	"Jun 2001"	"Channelwave Software, Inc."	"Camberidge, MA"	"J
 Chapter 4 - Hall of Achievements
 
 The hall of achievements is east of the main lobby. "TODO: hall of achievements desc."
+The hall place holder is here.
 
 Chapter 5 - Hobbies / Interests / Projects
 
 Section 1 - Projects (laboratory)
 
 The laboratory is west of the mezzanine. "TODO: laboratory desc."
+The lab place holder is here.
 
 Section 2 - Hobbies/Interests (museum)
 
@@ -243,8 +245,7 @@ Chapter 1 - Dungeon
 Section 1 - Rooms
 
 The dungeon is down from the trapdoor. "TODO: dungeon desc.".
-
-A dungeon placeholder is here.
+The dungeon place holder is here.
 
 Section 2 - FetLife only
 
@@ -308,7 +309,7 @@ Chapter 3 - Testing - not for release
 When play begins (this is the run property checks at the start of play rule): 
 	repeat with item running through things: 
 		if the item is not the light-meter and the item is not a cubical and the description of the item is "": 
-			say "[item] has no description."
+			say "[The item] has no description (in [the location of the item])."
 
 After reading a command (this is the ignore beta-comments rule): 
 	if the player's command matches the regular expression "^(\p|\*)": 
