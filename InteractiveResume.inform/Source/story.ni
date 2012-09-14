@@ -195,8 +195,7 @@ Cubical F	"Sep 2000"	"Jun 2001"	"Channelwave Software, Inc."	"Camberidge, MA"	"J
 
 Chapter 4 - Hall of Achievements
 
-The hall of achievements is east of the main lobby. "TODO: hall of achievements desc."
-The hall place holder is here.
+The hall of achievements is east of the main lobby. "There is a wall sealing off a good portion of this room with large signs that read [bold type]Under Construction[roman type]".
 
 Chapter 5 - Hobbies / Interests / Projects
 
