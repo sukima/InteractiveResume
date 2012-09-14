@@ -86,7 +86,10 @@ Instead of going south while in the mezzanine, say "You can look down at the fro
 
 Section 3 - Information Desk
 
-The information desk is scenery and a supporter in the main lobby. "A round desk.".
+The information desk is scenery and a supporter in the main lobby.
+The description is "The desk wraps around in a circle. Made of the particle wood and painted white with linoleum on the top.".
+
+A brochure is a thing on the information desk. The description is "Welcome to The Devin Weaver Company.[paragraph break]Please enjoy your stay. Check out [The hall of achievements] or [The museum]. We have [a laboratory] that describe projects that have been worked on. Or stop by [The offices] to see where the administration magic happens.[paragraph break][italic type]There is also a dungeon for adults only. See if you can find it.[roman type]".
 
 Section 4 - Behind the staircase
 
@@ -203,6 +206,7 @@ Instead of examining an exhibit:
 	display the message "[description]".
 
 The photography exhibit is an exhibit in the museum.
+The description is "Devin enjoys taking pictures especially pictures of nature. To see his works please visit:[paragraph break][fixed letter spacing]http://tritarget.org/photography/[variable letter spacing][paragraph break]However, he also loves a more involved type of photography called 360 Panoramas or virtual tour. Using viewers the user can see a picture completely around the view point including up and down. You can see many examples of panoramas Devin has made at the same above address.".
 Understand "photo" or "photos" as the photography exhibit.
 
 The interactive fiction exhibit is an exhibit in the museum.
@@ -238,11 +242,31 @@ A Mars bar is a candy contained in Cubical A. The description is "Featuring noug
 A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar".
 The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
 
+A bag of popcorn is a candy on the information desk.
+
 Chapter 3 - Misc, red herrings
+
+Section 1 - A sonic screwdriver
 
 The sonic screwdriver is a device on the information desk. It is switched off. The description is "JACK HARKNESS: 'Who looks at a screwdriver and thinks, [']Oooh, this could be a little more sonic?[']'[line break]DR. WHO: 'What, you've never been bored? Never had a long night? Never had a lot of cabinets to put up?'[line break]				-- 'Dr. Who' television show, BBC".
 Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
 	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
+
+Instead unlocking the trapdoor with the sonic screwdriver:
+	if the sonic screwdriver is switched on:
+		now the trapdoor is unlocked;
+		now the sonic screwdriver is switched off;
+		say "You hear an click from [the trapdoor]. Satisfied with your success, you turn [the sonic screwdriver] off.";
+	otherwise:
+		say "Nothing happens. [italic type]You have to turn [the sonic screwdriver] on first.[roman type][paragraph break]".
+
+After locking the trapdoor with the sonic screwdriver:
+	if the sonic screwdriver is switched on:
+		now the trapdoor is unlocked;
+		now the sonic screwdriver is switched off;
+		say "You hear an click from [the trapdoor]. Satisfied with your success, you turn [the sonic screwdriver] off.";
+	otherwise:
+		say "Nothing happens. [italic type]You have to turn [the sonic screwdriver] on first.[roman type][paragraph break]".
 
 
 Part 3 - Setup
@@ -299,7 +323,7 @@ Test labs with "e / w" in the museum holding the sonic screwdriver.
 
 Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u" in behind the staircase.
 
-Test dungeon with "u / d" in the dungeon.
+Test dungeon with "z" in the dungeon.
 
 
 [ vim:set noet wrap ts=2: ]
