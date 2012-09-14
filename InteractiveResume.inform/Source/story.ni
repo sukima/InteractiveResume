@@ -136,15 +136,6 @@ Instead of pushing the green button for the first time:
   now the trapdoor is unlocked;
   say "You push [the noun]. You hear a [italic type]click[roman type] coming from [the trapdoor]."
 
-The sign is part of the bust. The description is "It reads:
-
-What is the seventh word in the 'About Me' section of my Fetlife profile ([bold type]Sukima[roman type])?
-
-white: 'lifestyle'
-[line break]black: 'dungeons'
-[line break]green: 'secrets'
-[line break]red: 'floggers'".
-
 Section 5 - Backdrops and staircase
 
 The sun is a backdrop. "The massive glass ceiling allows a lot of the sun to shine through lighting almost every corner of this massive two story lobby."
@@ -249,6 +240,16 @@ Chapter 1 - Dungeon
 Section 1 - Rooms
 
 The dungeon is down from the trapdoor. "TODO: dungeon desc.".
+
+A dungeon placeholder is here.
+
+Section 2 - FetLife only
+
+[This section is for the release meant for fetlife.com only. Other public versions will have a less adult dungeon.]
+The sign is part of the bust. The description is "It reads:[paragraph break]What is the seventh word in the 'About Me' section of my Fetlife profile ([bold type]Sukima[roman type])?[paragraph break]white: 'lifestyle'[line break]black: 'dungeons'[line break]green: 'secrets'[line break]red: 'floggers'".
+
+A wooden cross is a supporter and enterable in the dungeon.
+Molly is a female person. She is on the cross.
 
 Chapter 2 - Candy
 
