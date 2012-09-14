@@ -262,7 +262,7 @@ A Mars bar is a candy contained in Cubical A. The description is "Featuring noug
 A musketeers bar is a candy contained in the interactive fiction exhibit. The printed name is "Three Musketeers bar".
 The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
 
-A bag of popcorn is a candy on the information desk.
+A Snickers bar is a candy on the information desk. The description is "It consists of nougat topped with caramel and peanuts."
 
 Chapter 3 - Misc, red herrings
 
