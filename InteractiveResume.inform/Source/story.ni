@@ -232,7 +232,7 @@ Understand "tv" or "television" or "movie" or "movies" or "music" as the popular
 Understand "poster" or "posters" as a mistake ("Try examining the exhibits instead.").
 
 The games exhibit is an exhibit in the museum.
-The description is "Devin loves adventure games. His favorites of all time include: Zelda, Myst, Zork series. He also had a good deal of interest in the classic Quake, Doom, and Duke Nukem 3D. He has interests in game creating especially the use of 3D mesh work like Blender 3D and LightWave."
+The description is "Devin loves adventure games. His favorites of all time include: Zelda, Myst and the Zork series. He also had a good deal of interest in the classic Quake, Doom, and Duke Nukem 3D. He has interests in game creating especially the use of 3D mesh work like Blender 3D and LightWave."
 Understand "game" or "video" or "videogame" or "videogames" as the games exhibit.
 
 
