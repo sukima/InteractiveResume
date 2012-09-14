@@ -227,7 +227,9 @@ The description is "Interactive Fiction is what you are experiencing here. It is
 Understand "if" as the interactive fiction exhibit.
 
 The popular culture exhibit is an exhibit in the museum.
+The description is "A series of posters line the walls of this exhibit. The major categories are Favorite TV shows, Favorite Movies, and Music.[paragraph break]Favorite TV Shows: Star Trek (TOS, TNG, Voyager, DS9 and Enterprise), Firefly, Inspector Gadget, Get Smart, Dr. Who, South Park, Futurama, Power Puff Girls, MacGyver[line break]Favorite Movies: The Fifth Element, Serenity, The Boondock Saints, Goonies, Lilo & Stitch[line break]Music: Heavy Metal, Techno, Disco, Dance, Celtic/Irish, New Age Ambient,  World".
 Understand "tv" or "television" or "movie" or "movies" or "music" as the popular culture exhibit.
+Understand "poster" or "posters" as a mistake ("Try examining the exhibits instead.").
 
 The games exhibit is an exhibit in the museum.
 The description is "Devin loves adventure games. His favorites of all time include: Zelda, Myst, Zork series. He also had a good deal of interest in the classic Quake, Doom, and Duke Nukem 3D. He has interests in game creating especially the use of 3D mesh work like Blender 3D and LightWave."
