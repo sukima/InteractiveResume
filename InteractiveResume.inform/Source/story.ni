@@ -132,7 +132,7 @@ The description of the red button is "An arcade style button the color of red.".
 The description of the white button is "An arcade style button the color of white.".
 The description of the black button is "An arcade style button the color of black.".
 Instead of pushing a button, say "You push [the noun]. Nothing seems to have happened."
-Instead of pushing the green button:
+Instead of pushing the green button for the first time:
   now the trapdoor is unlocked;
   say "You push [the noun]. You hear a [italic type]click[roman type] coming from [the trapdoor]."
 
