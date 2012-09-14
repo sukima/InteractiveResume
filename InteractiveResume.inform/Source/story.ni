@@ -223,6 +223,7 @@ Understand "photo" or "photos" as the photography exhibit.
 Instead of examining the photography exhibit, display the long message "[description]".
 
 The interactive fiction exhibit is an exhibit in the museum.
+The description is "Interactive Fiction is what you are experiencing here. It is that style of adventure games implemented in text. I love playing and developing new games. You can see all the Interactive Fiction games I've made at:[paragraph break][fixed letter spacing]http://tritarget.org/stories/[variable letter spacing]".
 Understand "if" as the interactive fiction exhibit.
 
 The popular culture exhibit is an exhibit in the museum.
