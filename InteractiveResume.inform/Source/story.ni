@@ -50,7 +50,7 @@ To display on (T - text) the long message (M - some text):
 	check for candy;
 	leave the divider;
 	try looking.
-
+	
 To display the long message (M - some text):
 	display on "" the long message M.
 
@@ -311,7 +311,7 @@ Instead of going north:
 
 Table of Basic Help Options (continued)
 title	subtable	description	toggle
-"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full address.[roman type]"	--
+"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
 ["Settings"	Table of Setting Options	--	--]
 
 
