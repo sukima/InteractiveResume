@@ -396,7 +396,7 @@ Instead of going north:
 
 Table of Basic Help Options (continued)
 title	subtable	description	toggle
-"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
+"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]G+ Profile: [fixed letter spacing]https://plus.google.com/u/0/104981501099138892251/posts[variable letter spacing][line break]Twitter profile: Sukima[line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
 ["Settings"	Table of Setting Options	--	--]
 
 Chapter 3 - Testing - not for release
