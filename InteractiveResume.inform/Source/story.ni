@@ -343,8 +343,16 @@ The sonic screwdriver is a device on the information desk. It is switched off. T
 Every turn when the sonic screwdriver is switched on and the player can see the sonic screwdriver:
 	say "[one of]You hear a warbling sound.[or]...Wrrr Bzzz Fhhh Zzz Brrr...[purely at random]".
 		
-Instead of locking or unlocking the trapdoor with the sonic screwdriver, say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work on wood."
+To deny sonic on wood:
+	say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work on wood."
+Instead of locking or unlocking the trapdoor with the sonic screwdriver, deny sonic on wood.
+After switching on or using the sonic screwdriver in behind the staircase, deny sonic on wood.
 
+Carry out using the sonic screwdriver:
+	if the noun is not carried by the player:
+		silently try taking the noun;
+		say "(first taking [the noun])[command clarification break]";
+	say "You wave it around haphazardly." instead.
 
 Part 3 - Setup
 
@@ -398,7 +406,7 @@ Test museum with "w / e / x history / put screwdriver in photography / look / x 
 
 Test labs with "e / w / x bjurl / put screwdriver on bjurl / look" in the laboratory holding the sonic screwdriver.
 
-Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u" in behind the staircase.
+Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u / lock trapdoor with sonic screwdriver / use sonic screwdriver / g / turn off sonic screwdriver" in behind the staircase holding the sonic screwdriver.
 
 Test dungeon with "use sonic screwdriver / g / z / z / z / turn off sonic screwdriver / hit molly / kiss molly / untie molly / hit molly / kiss molly / turn on sonic screwdriver / drop sonic screwdriver / z / molly, get on cross / turn off sonic screwdriver" in the dungeon holding the sonic screwdriver.
 
