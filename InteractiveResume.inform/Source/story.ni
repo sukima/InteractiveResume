@@ -225,7 +225,7 @@ Section 2 - Table of Projects
 Table of Projects
 station	description	url	lang
 the Equipment Status Viewer	"A redmine plugin that tracks equipment and their last known location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
-the SkyQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
+the SkiQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
 the bjurl	"A PERL plugin for irssi (an IRC client) that collects URLs from a channel and dynamically updates a JavaScript based website for easy opening in a remote browser. Includes WebKit Desktop Notifications and jQuery AJAX Support."	"http://sukima.github.com/bjurl"	"PERL, jQuery"
 the SimNotify	"A Ruby on Rails scheduling program for medical simulation centers. This app is very site specific for a simulation center that I work for. This project is my attempt to allow people to schedule a simulation by entering in key data needed and the administrators can place that scheduled session on a calendar."	"http://sukima.github.com/SimNotify/"	"Ruby on Rails"
 
@@ -296,6 +296,8 @@ A Mars bar is a candy contained in Cubical A. The description is "Featuring noug
 A Three Musketeers bar is a candy contained in the interactive fiction exhibit. The description is "A standard-size 3 Musketeers bar (60g) has 260 calories (1,100 kJ), 8 grams of fat, 5 grams of saturated fat, 0 grams of trans fat, 110 milligrams of sodium and 40 grams of sugar. Yum!".
 
 A Snickers bar is a candy on the information desk. The description is "It consists of nougat topped with caramel and peanuts."
+
+A melted Klondike bar is a candy. It is contained in SkiQuery. The description is "The melted vanilla ice cream surrounded by a cracked and melted chocolate shell is barely contained by the soggy foil wrapper.[if the player carries the melted klondike bar] Your hands get sticky as you hold it.[end if]".
 
 Chapter 3 - Misc, red herrings
 
