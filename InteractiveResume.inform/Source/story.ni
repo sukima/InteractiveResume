@@ -113,6 +113,8 @@ The description is "The desk wraps around in a circle. Made of the particle wood
 A brochure is a thing on the information desk. The description is "Try typing HELP instead."
 Instead of examining the brochure, try asking for help.
 
+Instead of entering the information desk, say "That would seem rude."
+
 Section 4 - Behind the staircase
 
 A room called Behind the staircase is north of the lobby. "A floor to ceiling wall of glass stands to let even more light into this two floor lobby. The stairs create a small alcove as they go above your head. The more open portion of [the main lobby] is to the south."
@@ -268,16 +270,27 @@ Chapter 1 - Dungeon
 
 Section 1 - Rooms
 
-The dungeon is down from the trapdoor. "TODO: dungeon desc.".
-The dungeon place holder is here.
+The dungeon is down from the trapdoor. "Made of stone the walls support several fake torches that provide a darker soft light. There are chains that attach to the walls through out. The exit is up the ladder back through [the trapdoor] above.".
+
+The ladder and some chains are scenery in the dungeon.
+The description of the ladder is "A simple wooden ladder you used to descend into [the dungeon]."
+The description of the chains is "Chains hang on the walls in well spaced sections. Unfortunately they look only decorative considering they are held to the wall by duct tape."
+Instead of doing something with the chains, say "They are only decorative."
+
+Some torches are scenery in the dungeon. The description is "These torches provide some light y attempting to look like real fire but in truth it is only a flickering LED."
+
+The dungeon table is a supporter. It is in the dungeon. The description is "A simple folding card table. It looks well used."
+Instead of entering the table, say "It would break under the weight."
 
 Section 2 - FetLife only
 
 [This section is for the release meant for fetlife.com only. Other public versions will have a less adult dungeon.]
 The sign is part of the bust. The description is "It reads:[paragraph break]What is the seventh word in the 'About Me' section of my Fetlife profile ([bold type]Sukima[roman type])?[paragraph break]white: 'lifestyle'[line break]black: 'dungeons'[line break]green: 'secrets'[line break]red: 'floggers'".
 
-A wooden cross is a supporter and enterable in the dungeon.
-Molly is a female person. She is on the cross.
+A wooden cross is a supporter and enterable in the dungeon. The description is "This is more of an X made of wood. It leans back at a slight angle. It has foot holds and hooks to tie people to."
+
+Molly is a female person. She is on the cross. The description is "A delicate red head with an average build. Her eyes the color of green. And she seems to be [bold type]naked[roman type]!" 
+
 To tie her up:
 	move molly to the cross;
 	say "She happily jumps on the cross and you tie her limbs to it."
@@ -293,8 +306,6 @@ Instead of taking molly when molly is supported by the cross:
 	say "You untie her and she begrudgingly steps down."
 Instead of tying molly to the cross when molly is not supported by the cross:
 	tie her up.
-
-Understand "untie [something]" as taking.
 
 Instead of attacking molly:
 	if molly is on the cross:
@@ -312,6 +323,10 @@ Every turn while the sonic screwdriver is switched on and the player can see mol
 		say "With [the sonic screwdriver] skillfully pointed at [Molly], [one of]she starts panting and moaning.[or]her moans grow loader.[or]she screams 'OH YES!'[or]her body begins to shiver.[or]she yells 'I[']M CUMING!' and screams as cum drips from her labia.[cycling]";
 	otherwise:
 		say "[Molly] [one of]frowns as she longingly looks at [the sonic screwdriver] which is currently not being pointed at her.[or]asks 'can you use that on me?'[or]gives you the puppy dog eyes and then darts a glance at [the sonic screwdriver].[at random]".
+
+Instead of giving a candy to molly:
+	remove the noun from play;
+	say "[Molly] eagerly eats [the second noun] and smiles."
 
 Chapter 2 - Candy
 
@@ -334,6 +349,8 @@ A Three Musketeers bar is a candy contained in the interactive fiction exhibit. 
 A Snickers bar is a candy on the information desk. The description is "It consists of nougat topped with caramel and peanuts."
 
 A melted Klondike bar is a candy. It is contained in SkiQuery. The description is "The melted vanilla ice cream surrounded by a cracked and melted chocolate shell is barely contained by the soggy foil wrapper.[if the player carries the melted klondike bar] Your hands get sticky as you hold it.[end if]".
+
+Some cookies are candy. they are on the dungeon table. The description is "C... is for cookie. And that's good enough for me!"
 
 Chapter 3 - Misc, red herrings
 
@@ -359,6 +376,8 @@ Part 3 - Setup
 Chapter 1 - Game Mechanics
 
 Use no scoring.
+
+Understand "untie [something]" as taking.
 
 When play begins:
 	choose row 1 in Table of Basic Help Options;
@@ -394,7 +413,7 @@ After reading a command (this is the ignore beta-comments rule):
 
 Test me with "test lobby / test offices / test hall / test mezzanine / test museum / test labs / test trapdoor".
 
-Test lobby with "x desk / x stairs / enter stairs / g / s / taste bar" in the main lobby.
+Test lobby with "x desk / get on desk / x stairs / enter stairs / g / s / taste bar" in the main lobby.
 
 Test offices with "e / w / x chair / x terminals / put screwdriver in A / look" in the offices holding the sonic screwdriver.
 
@@ -408,7 +427,7 @@ Test labs with "e / w / x bjurl / put screwdriver on bjurl / look" in the labora
 
 Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u / lock trapdoor with sonic screwdriver / use sonic screwdriver / g / turn off sonic screwdriver" in behind the staircase holding the sonic screwdriver.
 
-Test dungeon with "use sonic screwdriver / g / z / z / z / turn off sonic screwdriver / hit molly / kiss molly / untie molly / hit molly / kiss molly / turn on sonic screwdriver / drop sonic screwdriver / z / molly, get on cross / turn off sonic screwdriver" in the dungeon holding the sonic screwdriver.
+Test dungeon with "x ladder / x torches / x chains / take chains / x table / get on table / x cross / x molly / use sonic screwdriver / g / z / z / z / turn off sonic screwdriver / hit molly / kiss molly / untie molly / hit molly / kiss molly / turn on sonic screwdriver / drop sonic screwdriver / z / molly, get on cross / turn off sonic screwdriver" in the dungeon holding the sonic screwdriver.
 
 
 [ vim:set noet wrap ts=2: ]
