@@ -121,7 +121,7 @@ A trapdoor is down from behind the staircase and up from the dungeon. The descri
 Understand "planks" or "wood" or "door" as the trapdoor.
 Instead of pulling the trapdoor, try opening the trapdoor.
 
-A bust of Devin Weaver is here. The description is "Standing on a marble pedestal is a stone bust of Devin Weaver. You know this because someone took the time to carve a name tag onto the chest portion of the bust. There are four buttons inset in the top of the pedestal each a different color. Attached to the pedestal is a sign that describes what the buttons do. (Try EXAMINE SIGN to read it)."
+A bust of Devin Weaver is here. The bust is fixed in place. The description is "Standing on a marble pedestal is a stone bust of Devin Weaver. You know this because someone took the time to carve a name tag onto the chest portion of the bust. There are four buttons inset in the top of the pedestal each a different color. Attached to the pedestal is a sign that describes what the buttons do. (Try EXAMINE SIGN to read it)."
 
 Understand "devin" or "weaver" or "pedestal" as the bust.
 
@@ -224,7 +224,7 @@ Section 2 - Table of Projects
 
 Table of Projects
 station	description	url	lang
-the Equipment Status Viewer	"A redmine plugin that tracks equipment and there last know location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
+the Equipment Status Viewer	"A redmine plugin that tracks equipment and their last known location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
 the SkyQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
 the bjurl	"A PERL plugin for irssi that collects URLs from a channel and dynamically updates a JavaScript based website for easy opening in a remote browser. Includes WebKit Desktop Notifications and jQuery AJAX Support."	"http://sukima.github.com/bjurl"	"PERL, jQuery"
 the SimNotify	"A Ruby on Rails scheduling program for medical simulation centers. This app is very site specific for a simulation center that I work for. This project is my attempt to allow people to schedule a simulation by entering in key data needed and the administrators can place that scheduled session on a calendar."	"http://sukima.github.com/SimNotify/"	"Ruby on Rails"
