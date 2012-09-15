@@ -296,8 +296,22 @@ Instead of tying molly to the cross when molly is not supported by the cross:
 
 Understand "untie [something]" as taking.
 
-Instead of attacking molly, say "TODO". [TODO]
-Instead of kissing molly, say "TODO". [TODO]
+Instead of attacking molly:
+	if molly is on the cross:
+		say "[one of]She closes her eyes and moans.[or]She cries out in pain and then smiles.[or]she pants 'Yes MORE!'[at random]";
+	otherwise:
+		say "[one of]She steps out of the way.[or]She bends over in time for you to connect with her buttocks.[or]She grins and says 'Why don't you try that again on the cross?'[at random]".
+Instead of kissing molly:
+	if molly is on the cross:
+		say "You rub your fingers between her vagina folds with your fingers while you squeeze her breast with the other hand. You place your lips on hers and passionately kiss her. You feel your fingers get slightly wet.[one of][or] [italic type]This isn't working fast enough, perhaps you need something with more vibration.[roman type][stopping]";
+	otherwise:
+		say "You give [Molly] a passionate kiss. She says 'Thanks you. Can we try that again while tied to the cross?'".
+
+Every turn while the sonic screwdriver is switched on and the player can see molly:
+	if the player carries the sonic screwdriver:
+		say "With [the sonic screwdriver] skillfully pointed at [Molly], [one of]she starts panting and moaning.[or]her moans grow loader.[or]she screams 'OH YES!'[or]her body begins to shiver.[or]she yells 'I[']M CUMING!' and screams as cum drips from her labia.[cycling]";
+	otherwise:
+		say "[Molly] [one of]frowns as she longingly looks at [the sonic screwdriver] which is currently not being pointed at her.[or]asks 'can you use that on me?'[or]gives you the puppy dog eyes and then darts a glance at [the sonic screwdriver].[at random]".
 
 Chapter 2 - Candy
 
@@ -386,7 +400,7 @@ Test labs with "e / w / x bjurl / put screwdriver on bjurl / look" in the labora
 
 Test trapdoor with "s / n / x sun / x wall / x stairs / enter stairs / x bust / x sign / read sign / open door / pull door / d / press button / x white button / press white button / press green button / open door / d / u" in behind the staircase.
 
-Test dungeon with "z" in the dungeon.
+Test dungeon with "use sonic screwdriver / g / z / z / z / turn off sonic screwdriver / hit molly / kiss molly / untie molly / hit molly / kiss molly / turn on sonic screwdriver / drop sonic screwdriver / z / molly, get on cross / turn off sonic screwdriver" in the dungeon holding the sonic screwdriver.
 
 
 [ vim:set noet wrap ts=2: ]
