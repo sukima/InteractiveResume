@@ -281,10 +281,12 @@ Molly is a female person. She is on the cross.
 
 Chapter 2 - Candy
 
-A candy is a kind of thing.
+A candy is a kind of thing. A candy is edible.
+
 Instead of tasting a candy:
 	say "You think 'just a small taste' but in truth it was so good you needed more and so you ate [the noun] instead.";
 	try eating the noun.
+
 Instead of eating a candy:
 	remove the noun from play;
 	say "[one of][The noun] tastes delicious.[or]You get a chill up your spine because [the noun] was so satisfying.[or]You feel a small bit of guilt for eating [the noun] but not enough to stop you from enjoying every bite.[purely at random]".
