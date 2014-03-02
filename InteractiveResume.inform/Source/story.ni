@@ -228,6 +228,7 @@ Section 2 - Table of Projects
 
 Table of Projects
 station	description	url	lang
+the promises-demo	"A demo (website) on using promises in asynchronous JavaScript code. "	"http://sukima.github.io/promise-demo/"	"JavaScript"
 the promise-titanium	"An example on using promises in a Titanium application."	"https://github.com/sukima/promises-titanium"	"JavaScript, Titanium"
 the Equipment Status Viewer	"A redmine plugin that tracks equipment and their last known location. Entry of the last know location will be done via an iPhone web interface and use qr-codes to 'check-out' equipment."	"http://sukima.github.com/redmine_equipment_status_viewer"	"Ruby on Rails, Redmine"
 the SkiQuery	"A JavaScript port of the old classic command-line game ski."	"http://sukima.github.com/skiQuery/"	"JavaScript, jQuery"
