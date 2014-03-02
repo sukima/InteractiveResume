@@ -2,7 +2,7 @@
 
 The story headline is "An Interactive Job Application".
 The story genre is "Other".
-The release number is 1.
+The release number is 2.
 The story creation year is 2012.
 The story description is "This is an interactive resume. Well -- it is my unique and quirky way to show the world who I am. It is a text adventure like the old mainframe kind (but newer). You may go directly to the information with the links provided or play the game for a more fun and -- interactive way to find out why in the world I would make such a thing.".
 
