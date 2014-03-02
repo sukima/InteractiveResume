@@ -1,5 +1,7 @@
 "Devin's Interactive Resume" by Devin Weaver
 
+[See how I made it: https://github.com/sukima/InteractiveResume]
+
 The story headline is "An Interactive Job Application".
 The story genre is "Other".
 The release number is 2.
