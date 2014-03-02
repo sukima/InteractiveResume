@@ -1,7 +1,5 @@
 "Devin's Interactive Resume" by Devin Weaver
 
-[to be sent to jointhefamily@bitlove.co]
-
 The story headline is "An Interactive Job Application".
 The story genre is "Other".
 The release number is 1.
@@ -13,8 +11,11 @@ release along with a file of "Static Resume" called "DevinWeaver_Resume.pdf".
 
 [Index map with EPS file.]
 
+[Included with Inform7]
 Include Basic Help Menu by Emily Short.
+[http://inform7.com/extensions/Eric%20Eve/Exit%20Lister/Exit%20Lister.i7x]
 Include Exit Lister by Eric Eve.
+[http://inform7.com/extensions/Aaron%20Reed/Player%20Experience%20Upgrade/Player%20Experience%20Upgrade.i7x]
 Include Player Experience Upgrade by Aaron Reed.
 
 
@@ -119,7 +120,7 @@ Section 4 - Behind the staircase
 
 A room called Behind the staircase is north of the lobby. "A floor to ceiling wall of glass stands to let even more light into this two floor lobby. The stairs create a small alcove as they go above your head. The more open portion of [the main lobby] is to the south."
 
-A trapdoor is down from behind the staircase and up from the dungeon. The description is "Wooden planks lay in-line on the floor under the alcove created by [the staircase]. It has a handle for lifting. The word 'dungeon' is wood burned across [the trapdoor]." It is a closed, openable and locked door.
+A trapdoor is down from behind the staircase and up from the dungeon. The description is "Wooden planks lay in-line on the floor under the alcove created by [the staircase]. It has a handle for lifting. The words [bold type]Dungeon - Adult Content[roman type] is wood burned across [the trapdoor]." It is a closed, openable and locked door.
 Understand "planks" or "wood" or "door" as the trapdoor.
 Instead of pulling the trapdoor, try opening the trapdoor.
 
@@ -277,7 +278,7 @@ The description of the ladder is "A simple wooden ladder you used to descend int
 The description of the chains is "Chains hang on the walls in well spaced sections. Unfortunately they look only decorative considering they are held to the wall by duct tape."
 Instead of doing something with the chains, say "They are only decorative."
 
-Some torches are scenery in the dungeon. The description is "These torches provide some light y attempting to look like real fire but in truth it is only a flickering LED."
+Some torches are scenery in the dungeon. The description is "These torches provide only a slight glow of light while attempting to look like real fire but in truth it is only a flickering LED."
 
 The dungeon table is a supporter. It is in the dungeon. The description is "A simple folding card table. It looks well used."
 Instead of entering the table, say "It would break under the weight."
@@ -396,7 +397,7 @@ Instead of going north:
 
 Table of Basic Help Options (continued)
 title	subtable	description	toggle
-"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: Montville, CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]G+ Profile: [fixed letter spacing]https://plus.google.com/u/0/104981501099138892251/posts[variable letter spacing][line break]Twitter profile: Sukima[line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[variable letter spacing][line break]Fetlife profile: Sukima[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
+"Contacting the author"	--	"Devin Weaver[line break]Phone: 860-373-7854[line break]Email: suki (at) tritarget.org[line break]Location: CT, USA*[paragraph break]Personal Blog: [fixed letter spacing]http://tritarget.org/[variable letter spacing][line break]G+ Profile: [fixed letter spacing]https://plus.google.com/u/0/104981501099138892251/posts[variable letter spacing][line break]Twitter profile: Sukima[line break]Github profile: Sukima [fixed letter spacing]http://github.com/sukima/[paragraph break][italic type]* Please email me to get the full snail mail address.[roman type]"	--
 ["Settings"	Table of Setting Options	--	--]
 
 Chapter 3 - Testing - not for release
