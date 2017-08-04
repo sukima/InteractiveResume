@@ -17,9 +17,9 @@ release along with a file of "Static Resume" called "DevinWeaver_Resume.pdf".
 Include Basic Help Menu by Emily Short.
 [http://inform7.com/extensions/Eric%20Eve/Exit%20Lister/Exit%20Lister.i7x]
 Include Exit Lister by Eric Eve.
-[http://inform7.com/extensions/Aaron%20Reed/Player%20Experience%20Upgrade/Player%20Experience%20Upgrade.i7x]
-Include Player Experience Upgrade by Aaron Reed.
 
+Using is an action applying to one carried thing.
+Understand "use [something]" as using.
 
 Part 1 - The Business End
 
@@ -99,14 +99,14 @@ Section 1 - Lobby
 
 The Main Lobby is a room. "This is a large open lobby. It has a clean shiny marble floors and the ceiling is all glass allowing the sun to shine through. A large [staircase] starts behind [the information desk] leading to the second floor mezzanine which wraps around the lobby with glass balconies. On the ground floor you can see to the east a hallway with the words 'Hall of Achievements' carved into the marble arch. To the west is another marble arch labeled 'Offices (past jobs)'. To the north leads behind the staircase. The main entrance is to the south."
 
-Instead of going south while in the main lobby, say "I know it is a nice and sunny day outside. But don't you want to see what's inside first?"
+Instead of going south in the presence of the main lobby, say "I know it is a nice and sunny day outside. But don't you want to see what's inside first?"
 
 Section 2 - The Mezzanine
 
 The Mezzanine is up from the main lobby. "The mezzanine wraps around the entire room. Through the large open space you can see [the main lobby] below. On the north wall is the continuation of the glass wall. The banister is made of glass and keeps you from falling over. There are windows running the length of the west and east walls. You can see through the west wall a laboratory. The plaque next to the open door reads 'Projects'. On the east wall you see what looks like a museum exhibit behind the windows. The open door is labeled 'Hobbies/Interests'.".
 
-Instead of going north while in the mezzanine, try examining the glass wall.
-Instead of going south while in the mezzanine, say "You can look down at the front steps from here. You can also see the turn about and your car there."
+Instead of going north in the presence of the mezzanine, try examining the glass wall.
+Instead of going south in the presence of the mezzanine, say "You can look down at the front steps from here. You can also see the turn about and your car there."
 
 Section 3 - Information Desk
 
@@ -201,7 +201,6 @@ Cubical G	"Sep 2000"	"Jun 2001"	"Channelwave Software, Inc."	"Camberidge, MA"	"J
 Chapter 4 - Hall of Achievements
 
 The hall of achievements is east of the main lobby. "There is a wall sealing off a good portion of this room with large signs that read [bold type]Under Construction[roman type]".
-The construction equipment is here.
 
 Chapter 5 - Hobbies / Interests / Projects
 
@@ -370,7 +369,7 @@ Every turn when the sonic screwdriver is switched on and the player can see the 
 To deny sonic on wood:
 	say "Unfortunately [the trapdoor] is made of wood and [the sonic screwdriver] does not work on wood."
 Instead of locking or unlocking the trapdoor with the sonic screwdriver, deny sonic on wood.
-After switching on or using the sonic screwdriver in behind the staircase, deny sonic on wood.
+After switching on the sonic screwdriver in the presence of the staircase, deny sonic on wood.
 
 Carry out using the sonic screwdriver:
 	if the noun is not carried by the player:
