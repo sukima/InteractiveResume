@@ -229,6 +229,8 @@ Section 2 - Table of Projects
 
 Table of Projects
 station	description	url	lang
+the EscapeRoomMainframe	"This was a mini game for escapenewhaven.com where players escape a room by solving real puzzles. This is one of the puzzles where players must enter in codes to disable a self-destruct sequence."	"https://sandbox.tritarget.org/mainframe/"	"EmberJS, JavaScript, CSS, freesound.org"
+the VirtualDiceware	"Roll virtual dice to construct human readable passcodes. Uses a safisticated Ultra High Entropy Pseudo Random Number Generator and good Bootstrap visuals."	"https://sukima.github.io/virtual-dice-ware"	"EmberJS, Bootstrap"
 the TiCachedImages	"Example on how to cache images/files in Titanium. Uses builtin implimentation of Promises/A+."	"https://github.com/sukima/TiCachedImages"	"JavaScript, Titanium"
 the promises-demo	"A demo (website) on using promises in asynchronous JavaScript code. "	"http://sukima.github.io/promise-demo/"	"JavaScript"
 the promise-titanium	"An example on using promises in a Titanium application."	"https://github.com/sukima/promises-titanium"	"JavaScript, Titanium"
